@@ -12,9 +12,11 @@ The code is open in three repos:
 
 ## The question
 
-I grew up choosing horror movies by their VHS boxes in a Medellín video store,
-and those boxes shouted. Years later, scrolling streaming thumbnails, the
-posters seemed to whisper. I wanted to know if that was true or just nostalgia.
+Horror has been my favorite film genre since I was a kid. To bring that passion
+together with my other one, analyzing data, I started from a question: what can
+horror posters tell us? The question grew. In the VHS era, the box art was what
+made us rent a movie or pass on it. The scene has changed since then, but the
+cover is still the first thing that catches a viewer.
 
 ## July 2026 — a first prototype, and a corpus to clean
 
@@ -96,8 +98,11 @@ that bias and gives well-known films a slight push.
 
 ## Tools
 
-Python for the pipeline (OpenCV, YuNet, open_clip, k-means in CIELAB), AWS Step
-Functions and Batch for the heavy runs, a static Vite site on Netlify, and
+Python for the pipeline: k-means in CIELAB for color, YuNet for faces, a CLIP
+census for creatures (open_clip), OpenCV for text coverage and composition
+(symmetry, diagonals, the rule of thirds), MSI-Net for the saliency heat map and
+ViTPose for the pose skeleton in each poster's autopsy. AWS Step Functions and
+Batch for the heavy runs, a static Vite site on Netlify, and
 Supabase for each poster's autopsy data. I used Claude as a coding and editing
 assistant throughout; the question, the method decisions, the manual reviews
 and the readings in the essay are mine.
